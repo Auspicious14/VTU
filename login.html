@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightblue: "#7F82A1",
+            },
+            backgroundColor: {
+              rose: "#7F82A1",
+              gradient:
+                "linear-gradient(0deg, rgba(255, 113, 113, 0.1), rgba(255, 113, 113, 0.1)), radial-gradient(102.1% 102.1% at 17.33% 0%, #FFFFFF 0%, rgba(228, 228, 228, 0.750969) 63.85%, rgba(186, 55, 55, 0.61) 100%)",
+            },
+            fontFamily: {
+              serif: "Nunito, sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="lg:flex lg:justify-between lg:items-center p-4 lg:w-full font-serif"
+    >
+      <div class="lg:w-1/2">
+        <h1 class="lg:absolute lg:top-5 text-lg font-semibold">Hexiter</h1>
+        <div class="lg:flex lg:justify-center lg:items-center">
+          <div>
+            <div class="text-center lg:mt-16 mt-8">
+              <h1 class="lg:text-4xl text-xl font-semibold">Welcome Back</h1>
+              <p class="text-lightblue">Lets start off, where we stop</p>
+            </div>
+            <form class="mt-8">
+              <div class="flex flex-col">
+                <label for="" class="my-2">Email Address</label>
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  class="bg-gray-100 rounded-md h-10 lg:w-[400px] outline-none p-4 border-1"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="" class="my-2">Password</label>
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  class="bg-gray-100 rounded-md h-10 lg:w-[400px] outline-none p-4 border-1"
+                />
+              </div>
+              <div class="mt-2">
+                <a href="#" class="text-blue-500 font-normal"
+                  >Forgot password?</a
+                >
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-[#FF1D1D] text-center rounded-lg py-2 text-white font-normal my-6"
+              >
+                Sign In
+              </button>
+              <div class="flex items-center gap-1 justify-center">
+                <p>Don't have an account?</p>
+                <a href="#" class="text-[#FF1D1D] underline">Sign Up</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 hidden lg:block">
+        <div
+          class="bg-[#FDE6E6] w-[full] h-[570px] relative shrink border-none rounded-2xl p-16 pl-0 pb-0"
+        >
+          <div
+            class="absolute -left-0 bottom-0 z-50 flex-shrink-0 rounded-[16px] bg-[rgba(253, 230, 230, 0.20)] h-[450px]"
+          >
+            <img
+              src="./assets/rainbow.svg"
+              alt="sign-up-image"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-16 right-0 left-12 bg-red-200 bg-opacity-25 backdrop-blur-md backdrop-filter border-b-red-100 rounded-lg p-8 w-[560px] backdrop-blur-[30px] rounded-md"
+            >
+              <h1 class="font-bold text-xl">Best Rate</h1>
+              <p class="text-lightblue">
+                We have the best-rate among others. <br />
+                Our rates are the best in all market-rates
+              </p>
+              <div class="w-[200] h-[300px] top-[370px] left-[800px]">
+                <img
+                  src="./assets/Group 202.png"
+                  alt="sign-up-image"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-3 bg-white rounded-md border-none"></div>
+                <div class="w-4 h-4 rounded-full bg-gray-100/50"></div>
+                <div class="w-4 h-4 rounded-full bg-gray-100/50"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
