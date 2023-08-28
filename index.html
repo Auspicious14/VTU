@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/83580d7bef.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightblue: "#7F82A1",
+              red: "#FF1D1D",
+            },
+            backgroundColor: {
+              red: "#FF1D1D",
+              gradient:
+                "linear-gradient(0deg, rgba(255, 113, 113, 0.1), rgba(255, 113, 113, 0.1)), radial-gradient(102.1% 102.1% at 17.33% 0%, #FFFFFF 0%, rgba(228, 228, 228, 0.750969) 63.85%, rgba(186, 55, 55, 0.61) 100%)",
+            },
+            fontFamily: {
+              serif: "Nunito, sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav
+      class="w-full lg:flex lg:justify-between lg:shadow-sm lg:px-24 lg:py-4 lg:items-center"
+    >
+      <div>
+        <h1 class="font-semibold text-lg">Hexiter</h1>
+      </div>
+      <ul class="flex gap-4 items-center font-semibold">
+        <li><a href="#" class="lg:focus-bg-[#FF1D1D]">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Rates</a></li>
+      </ul>
+      <div>
+        <button
+          class="py-2 px-8 border border-gray-400 rounded-lg bg-transparent font-semibold text-center"
+        >
+          Login
+        </button>
+        <button
+          class="py-2 px-8 border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+        >
+          Sign up
+        </button>
+      </div>
+    </nav>
+    <section class="lg:text-center lg:py-20 bg-transparent">
+      <h1 class="lg:font-bold lg:text-6xl">
+        Best Giftcard <br />
+        Company in Nigeria
+      </h1>
+      <p class="my-4">
+        Experience swift and secure gift card transactions at the best rates:
+        Buy and Sell your gift cards now!
+      </p>
+      <button
+        class="py-1 px-8 my-4 border-gray-400 rounded-lg bg-[#FF1D1D] font-semibold text-center text-white"
+      >
+        Get Started Now
+      </button>
+
+      <div class="lg:mt-12 lg:flex lg:justify-center lg:items-center">
+        <div class="">
+          <img src="./assets/gift card 1.svg" alt="giftcards" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="lg:px-24 lg:py-12 lg:flex w-full lg:justify-between lg:items-center bg-[#F8F5F6]"
+    >
+      <div class="lg:w-1/2">
+        <p class="text-[#FF1D1D] font-semibold lg:my-2">Why choose Us</p>
+        <h1 class="lg:text-3xl lg:font-semibold lg:my-2">
+          Specialist in aviding <br />
+          clients on financial <br />challenges
+        </h1>
+        <p>
+          Corporate headquarters is the part of a corporate <br />structure that
+          deals with important tasks such as <br />strategic planning,
+        </p>
+        <div class="lg:flex lg:gap-4 lg:mt-8">
+          <div
+            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF1D1D] lg:rounded-full lg:text-white lg:mt-4"
+          >
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div>
+            <p class="font-semibold my-2">Fast Turnaround Time</p>
+            <p>
+              Corporate headquarters is the part of a<br />
+              corporate structure that deals with <br />important
+            </p>
+          </div>
+        </div>
+        <div class="lg:flex lg:gap-4 lg:mt-4">
+          <div
+            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF1D1D] lg:rounded-full lg:text-white lg:mt-4"
+          >
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <div>
+            <p class="font-semibold my-2">100% Secure</p>
+            <p>
+              Corporate headquarters is the part of a<br />
+              corporate structure that deals with <br />important
+            </p>
+          </div>
+        </div>
+        <div class="lg:flex lg:gap-4 lg:mt-4">
+          <div
+            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF1D1D] lg:rounded-full lg:text-white lg:mt-4"
+          >
+            <i class="fa-solid fa-hourglass-start"></i>
+          </div>
+          <div>
+            <p class="font-semibold my-2">24/7 Hours Support</p>
+            <p>
+              Corporate headquarters is the part of a<br />
+              corporate structure that deals with <br />important
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-[40%]">
+        <img
+          src="./assets//giftcards.svg"
+          alt="giftcards"
+          class="object-contain"
+        />
+      </div>
+    </section>
+    <section class="lg:text-center lg:py-20 bg-[#F1F9FA]">
+      <p class="text-[#FF1D1D] font-semibold lg:my-2">Our Services</p>
+      <h1 class="lg:font-bold lg:text-2xl lg:mt-2">Services we provide</h1>
+      <div class="lg:my-12 lg:flex lg:justify-center lg:gap-12">
+        <div class="lg:px-8 lg:pb-4 lg:rounded-xl lg:text-center bg-white">
+          <div class="lg:flex lg:justify-center">
+            <div
+              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#0041FF] lg:rounded-full lg:text-white"
+            >
+              <i class="fa-solid fa-file"></i>
+            </div>
+          </div>
+          <p class="font-bold text-lg my-3">Buying GiftCard</p>
+          <p class="lg:my-6">
+            There are many variations passages <br />of Lorem lpsum majority,
+            some <br />words don't look believable if you <br />are going to
+            use.
+          </p>
+          <div
+            class="lg:flex lg:gap-3 lg:justify-center font-semibold lg:items-center text-red"
+          >
+            <a href="#">Learn More</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="lg:px-8 lg:pb-4 lg:rounded-xl lg:text-center bg-white relative top-12"
+        >
+          <div class="lg:flex lg:justify-center">
+            <div
+              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#1DE2CF] lg:rounded-full lg:text-white"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+          </div>
+          <p class="font-bold text-lg my-3">Selling GiftCard</p>
+          <p class="lg:my-6">
+            There are many variations passages <br />of Lorem lpsum majority,
+            some <br />words don't look believable if you <br />are going to
+            use.
+          </p>
+          <div
+            class="lg:flex lg:gap-3 lg:justify-center font-semibold lg:items-center text-red"
+          >
+            <a href="#">Learn More</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="lg:px-8 lg:pb-4 lg:rounded-xl lg:text-center bg-white">
+          <div class="lg:flex lg:justify-center">
+            <div
+              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+            >
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+          </div>
+          <p class="font-bold text-lg my-3">Customer Support</p>
+          <p class="lg:my-6">
+            There are many variations passages <br />of Lorem lpsum majority,
+            some <br />words don't look believable if you <br />are going to
+            use.
+          </p>
+          <div
+            class="lg:flex lg:gap-3 lg:justify-center font-semibold lg:items-center text-red"
+          >
+            <a href="#">Learn More</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="lg:px-24 lg:py-12 lg:flex w-full gap-12 lg:items-center bg-[#F8F5F6]"
+    >
+      <div class="lg:w-[40%]">
+        <p class="text-[#FF1D1D] font-semibold lg:my-2">How we work</p>
+        <h1 class="lg:text-3xl lg:font-semibold lg:my-2">
+          Our expert team <br />
+          do their best <br />
+        </h1>
+        <p>
+          You can also record any previous experience at other <br />jobs or
+          volunteering and
+        </p>
+        <button
+          class="py-2 px-8 mt-12 border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+        >
+          Get Started
+        </button>
+      </div>
+      <div class="w-[60%] flex gap-12 items-center">
+        <div>
+          <div
+            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-red lg:rounded-full font-bold text-white mb-4"
+          >
+            <p>1</p>
+          </div>
+          <p class="font-semibold">Initiate</p>
+          <p>
+            To initiate a gift card <br />
+            exchange trade, simply <br />
+            sign up or send us a <br />quick WhatsApp <br />message.
+          </p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <i class="fa-solid fa-arrow-right text-red"></i>
+          <div>
+            <div
+              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-white lg:rounded-full font-bold mb-4 text-red"
+            >
+              <p>2</p>
+            </div>
+            <p class="font-semibold">Processing</p>
+            <p>
+              After you initiate the <br />trade, you can sit back <br />and
+              relax while we <br />process your gift cards <br />as quickly as
+              possible,
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center">
+          <i class="fa-solid fa-arrow-right text-red"></i>
+          <div>
+            <div
+              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-white lg:rounded-full font-bold mb-4 text-red"
+            >
+              <p>3</p>
+            </div>
+            <p class="font-semibold">Payment</p>
+            <p>
+              After you initiate the <br />trade, you can sit back <br />and
+              relax while we <br />process your gift cards <br />as quickly as
+              possible,
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="lg:py-12 lg:px-24 bg-[#F1F9FA]">
+      <div class="lg:flex lg:justify-between lg:items-center mb-12">
+        <div>
+          <p class="text-[#FF1D1D] font-semibold lg:my-2">Testimonial</p>
+          <h1 class="lg:font-bold lg:text-4xl lg:mt-2 capitalize">
+            Don't just take our word for it
+          </h1>
+        </div>
+        <div class="lg:flex lg:gap-4 lg:items-center">
+          <div
+            id="prevBtn"
+            class="lg:w-8 lg:h-8 lg:flex lg:justify-center lg:items-center bg-white lg:rounded-full font-bold mb-4"
+          >
+            <i class="fa-solid fa-arrow-left text-red"></i>
+          </div>
+          <div
+            id="nextBtn"
+            class="lg:w-8 lg:h-8 lg:flex lg:justify-center lg:items-center bg-red lg:rounded-full font-bold mb-4"
+          >
+            <i class="fa-solid fa-arrow-right text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="lg:flex lg:gap-4 lg:items-center absolute left-0 right-0 carousel"
+        id="carousel"
+      >
+        <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white active lll">
+          <div class="lg:flex lg:justify-between lg:items-center">
+            <div class="lg:flex lg:gap-4 lg:items-center">
+              <div
+                class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+              >
+                <img
+                  src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                  alt="Testimonial"
+                  class="object-cover"
+                />
+              </div>
+              <p class="font-bold my-3">John Doe</p>
+            </div>
+            <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+          </div>
+          <p class="lg:my-6">
+            consetetur sadipscing elltr, sed dlam nonumy <br />
+            elrmod tempor invidunt ut labore et <br />
+            dolore magna allquyam erat, sed dlam <br />
+            voluptua ares nyan.
+          </p>
+        </div>
+        <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+          <div class="lg:flex lg:justify-between lg:items-center">
+            <div class="lg:flex lg:gap-4 lg:items-center">
+              <div
+                class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+              >
+                <img
+                  src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                  alt="Testimonial"
+                  class="object-cover"
+                />
+              </div>
+              <p class="font-bold my-3">Charles Petterson</p>
+            </div>
+            <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+          </div>
+          <p class="lg:my-6">
+            consetetur sadipscing elltr, sed dlam nonumy <br />
+            elrmod tempor invidunt ut labore et <br />
+            dolore magna allquyam erat, sed dlam <br />
+            voluptua ares nyan.
+          </p>
+        </div>
+        <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+          <div class="lg:flex lg:justify-between lg:items-center">
+            <div class="lg:flex lg:gap-4 lg:items-center">
+              <div
+                class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+              >
+                <img
+                  src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                  alt="Testimonial"
+                  class="object-cover"
+                />
+              </div>
+              <p class="font-bold my-3">Charles Petterson</p>
+            </div>
+            <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+          </div>
+          <p class="lg:my-6">
+            consetetur sadipscing elltr, sed dlam nonumy <br />
+            elrmod tempor invidunt ut labore et <br />
+            dolore magna allquyam erat, sed dlam <br />
+            voluptua ares nyan.
+          </p>
+        </div>
+        <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white carousel-item lll">
+          <div class="lg:flex lg:justify-between lg:items-center">
+            <div class="lg:flex lg:gap-4 lg:items-center">
+              <div
+                class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+              >
+                <img
+                  src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                  alt="Testimonial"
+                  class="object-cover"
+                />
+              </div>
+              <p class="font-bold my-3">Charles Petterson</p>
+            </div>
+            <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+          </div>
+          <p class="lg:my-6">
+            consetetur sadipscing elltr, sed dlam nonumy <br />
+            elrmod tempor invidunt ut labore et <br />
+            dolore magna allquyam erat, sed dlam <br />
+            voluptua ares nyan.
+          </p>
+        </div>
+        <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white carousel-item lll">
+          <div class="lg:flex lg:justify-between lg:items-center">
+            <div class="lg:flex lg:gap-4 lg:items-center">
+              <div
+                class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+              >
+                <img
+                  src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                  alt="Testimonial"
+                  class="object-cover"
+                />
+              </div>
+              <p class="font-bold my-3">Charles Petterson</p>
+            </div>
+            <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+          </div>
+          <p class="lg:my-6">
+            consetetur sadipscing elltr, sed dlam nonumy <br />
+            elrmod tempor invidunt ut labore et <br />
+            dolore magna allquyam erat, sed dlam <br />
+            voluptua ares nyan.
+          </p>
+        </div>
+        <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white carousel-item lll">
+          <div class="lg:flex lg:justify-between lg:items-center">
+            <div class="lg:flex lg:gap-4 lg:items-center">
+              <div
+                class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+              >
+                <img
+                  src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                  alt="Testimonial"
+                  class="object-cover"
+                />
+              </div>
+              <p class="font-bold my-3">Charles Petterson</p>
+            </div>
+            <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+          </div>
+          <p class="lg:my-6">
+            consetetur sadipscing elltr, sed dlam nonumy <br />
+            elrmod tempor invidunt ut labore et <br />
+            dolore magna allquyam erat, sed dlam <br />
+            voluptua ares nyan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const carouselItems = document.querySelectorAll(".carousel-item");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        carouselItems.forEach((item) => item.classList.remove("active"));
+        carouselItems[index].classList.add("active");
+      }
+
+      function prevSlide() {
+        currentIndex =
+          (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        showSlide(currentIndex);
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        showSlide(currentIndex);
+      }
+
+      prevBtn.addEventListener("click", prevSlide);
+      nextBtn.addEventListener("click", nextSlide);
+
+      showSlide(currentIndex);
+    </script>
+  </body>
+</html>
