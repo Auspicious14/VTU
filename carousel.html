@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Scroll</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .scroll-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .scroll-content {
+        display: inline-block;
+        animation: scroll 10s linear infinite;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200 p-4">
+    <div class="max-w-md mx-auto bg-white p-4 rounded-lg shadow-md">
+      <h1 class="text-xl font-semibold mb-4">Horizontal Scrolling</h1>
+      <div class="scroll-container">
+        <div class="scroll-content">
+          <div class="inline-block w-40 h-40 bg-blue-500 m-2"></div>
+          <div class="inline-block w-40 h-40 bg-green-500 m-2"></div>
+          <div class="inline-block w-40 h-40 bg-red-500 m-2"></div>
+          <div class="inline-block w-40 h-40 bg-yellow-500 m-2"></div>
+          <div class="inline-block w-40 h-40 bg-purple-500 m-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript is not required for the scrolling effect, but you can use it for additional functionality.
+    </script>
+  </body>
+</html>
