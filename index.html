@@ -38,32 +38,56 @@
   </head>
   <body>
     <nav
-      class="w-full lg:flex lg:justify-between lg:shadow-sm lg:px-24 lg:py-4 lg:items-center"
+      class="flex items-center justify-between relative px-2 md:flex md:static lg:flex lg:static lg:justify-between lg:shadow-sm lg:px-24 lg:py-4 lg:items-center"
     >
       <div>
         <h1 class="font-semibold text-lg">Hexiter</h1>
       </div>
-      <ul class="flex gap-4 items-center font-semibold">
-        <li><a href="#" class="lg:focus-bg-[#FF1D1D]">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Rates</a></li>
-      </ul>
+
       <div>
-        <button
-          class="py-2 px-8 border border-gray-400 rounded-lg bg-transparent font-semibold text-center"
+        <ul
+          id="toggle"
+          class="hidden w-full justify-center absolute top-[.3rem] left-0 text-center h-[10rem] bg-white py-4 md:flex md:static md:gap-4 md:items-center md:font-semibold md:top-0 md:h-0 md:bg-white md:py-0 md:w-0 lg:flex lg:gap-4 lg:static lg:items-center lg:font-semibold lg:top-0 lg:h-0 lg:bg-white lg:py-0 lg:w-0"
         >
-          Login
-        </button>
-        <button
-          class="py-2 px-8 border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
-        >
-          Sign up
-        </button>
+          <li><a href="#" class="lg:focus-bg-[#FF1D1D]">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Rates</a></li>
+
+          <div class="absolute right-2 top-1 md:hidden lg:hidden">
+            <i
+              class="fa-regular fa-circle-xmark"
+              id="Close"
+              onclick="()=>toggleClose"
+            ></i>
+          </div>
+        </ul>
+      </div>
+
+      <div>
+        <div class="hidden sm:hidden md:flex lg:flex">
+          <button
+            class="py-2 px-8 border border-gray-400 rounded-lg bg-transparent font-semibold text-center"
+          >
+            Login
+          </button>
+          <button
+            class="py-2 px-8 border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+          >
+            Sign up
+          </button>
+        </div>
+
+        <div class="flex sm:flex md:hidden lg:hidden">
+          <h4 class="text-3x1">
+            <i class="fa-solid fa-bars" id="Open" onclick="()=>toggleOpen"></i>
+          </h4>
+        </div>
       </div>
     </nav>
-    <section class="lg:text-center lg:py-20 bg-transparent">
-      <h1 class="lg:font-bold lg:text-6xl">
+
+    <section class="text-center py-10 lg:text-center lg:py-20 bg-transparent">
+      <h1 class="font-bold text-[2rem] lg:font-bold lg:text-6xl">
         Best Giftcard <br />
         Company in Nigeria
       </h1>
@@ -83,55 +107,72 @@
         </div>
       </div>
     </section>
+
     <section
-      class="lg:px-24 lg:py-12 lg:flex w-full lg:justify-between lg:items-center bg-[#F8F5F6]"
+      class="py-10 md:px-24 md:py-12 lg:px-24 lg:py-12 lg:flex w-full lg:justify-between lg:items-center bg-[#F8F5F6]"
     >
       <div class="lg:w-1/2">
-        <p class="text-[#FF1D1D] font-semibold lg:my-2">Why choose Us</p>
-        <h1 class="lg:text-3xl lg:font-semibold lg:my-2">
-          Specialist in aviding <br />
-          clients on financial <br />challenges
-        </h1>
-        <p>
-          Corporate headquarters is the part of a corporate <br />structure that
-          deals with important tasks such as <br />strategic planning,
-        </p>
-        <div class="lg:flex lg:gap-4 lg:mt-8">
+        <div>
+          <p
+            class="text-center text-[#FF1D1D] font-bold md:text-left lg:text-left lg:my-2"
+          >
+            Why choose Us
+          </p>
+          <h1
+            class="text-center py-3 px-4 text-2x1 font-bold md:text-left md:py-0 md:px-0 md:text-3x1 lg:text-3xl lg:py-0 lg:px-0 lg:text-3xl lg:font-semibold lg:my-2"
+          >
+            Specialist in aviding clients on financial challenges
+          </h1>
+          <p class="text-center py-2 md:text-left lg:text-left">
+            Corporate headquarters is the part of a corporate <br />structure
+            that deals with important tasks such as <br />strategic planning,
+          </p>
+        </div>
+
+        <div
+          class="flex gap-4 justify-center mt-8 md:justify-normal lg:justify-noraml"
+        >
           <div
-            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF1D1D] lg:rounded-full lg:text-white lg:mt-4"
+            class="w-10 h-10 flex justify-center items-center bg-[#FF1D1D] rounded-full text-white mt-4"
           >
             <i class="fa-solid fa-rocket"></i>
           </div>
           <div>
-            <p class="font-semibold my-2">Fast Turnaround Time</p>
+            <p class="font-bold my-2">Fast Turnaround Time</p>
             <p>
               Corporate headquarters is the part of a<br />
               corporate structure that deals with <br />important
             </p>
           </div>
         </div>
-        <div class="lg:flex lg:gap-4 lg:mt-4">
+
+        <div
+          class="flex gap-4 justify-center mt-8 md:justify-normal lg:justify-noraml"
+        >
           <div
-            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF1D1D] lg:rounded-full lg:text-white lg:mt-4"
+            class="w-10 h-10 flex justify-center items-center bg-[#FF1D1D] rounded-full text-white mt-4"
           >
             <i class="fa-solid fa-hammer"></i>
           </div>
           <div>
-            <p class="font-semibold my-2">100% Secure</p>
+            <p class="font-bold my-2">100% Secure</p>
             <p>
               Corporate headquarters is the part of a<br />
               corporate structure that deals with <br />important
             </p>
           </div>
         </div>
-        <div class="lg:flex lg:gap-4 lg:mt-4">
+
+        <div
+          class="flex gap-4 justify-center mt-8 md:justify-normal lg:justify-noraml"
+        >
           <div
-            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF1D1D] lg:rounded-full lg:text-white lg:mt-4"
+            class="w-10 h-10 flex justify-center items-center bg-[#FF1D1D] rounded-full text-white mt-4"
           >
             <i class="fa-solid fa-hourglass-start"></i>
           </div>
           <div>
-            <p class="font-semibold my-2">24/7 Hours Support</p>
+            <p class="font-bold my-2">24/7 Hours Support</p>
             <p>
               Corporate headquarters is the part of a<br />
               corporate structure that deals with <br />important
@@ -147,14 +188,28 @@
         />
       </div>
     </section>
-    <section class="lg:text-center lg:py-20 bg-[#F1F9FA]">
-      <p class="text-[#FF1D1D] font-semibold lg:my-2">Our Services</p>
-      <h1 class="lg:font-bold lg:text-2xl lg:mt-2">Services we provide</h1>
+
+    <section class="lg:px-24 lg:text-center lg:py-20 bg-[#F1F9FA]">
+      <div class="py-3 sm:py-3 md:py-3 lg:py-3">
+        <p
+          class="text-center text-[#FF1D1D] font-bold md:text-left lg:text-left lg:my-2"
+        >
+          Our Services
+        </p>
+        <h1
+          class="text-center md:text-left lg:text-left lg:font-bold lg:text-2xl lg:mt-2"
+        >
+          Services we provide
+        </h1>
+      </div>
+
       <div class="lg:my-12 lg:flex lg:justify-center lg:gap-12">
-        <div class="lg:px-8 lg:pb-4 lg:rounded-xl lg:text-center bg-white">
-          <div class="lg:flex lg:justify-center">
+        <div
+          class="px-8 pb-4 pt-2 rounded-xl text-center bg-white mx-5 my-6 md:mx-0 md:my-0 lg:my-0 lg:mx-0"
+        >
+          <div class="flex justify-center">
             <div
-              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#0041FF] lg:rounded-full lg:text-white"
+              class="w-10 h-10 flex justify-center items-center bg-[#0041FF] rounded-full text-white"
             >
               <i class="fa-solid fa-file"></i>
             </div>
@@ -172,12 +227,13 @@
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
+
         <div
-          class="lg:px-8 lg:pb-4 lg:rounded-xl lg:text-center bg-white relative top-12"
+          class="px-8 pb-4 pt-2 rounded-xl text-center bg-white mx-5 my-6 md:mx-0 md:my-0 md:relative md:top-12 lg:top-12 lg:relative lg:my-0 lg:mx-0"
         >
-          <div class="lg:flex lg:justify-center">
+          <div class="flex justify-center">
             <div
-              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#1DE2CF] lg:rounded-full lg:text-white"
+              class="w-10 h-10 flex justify-center items-center bg-[#0041FF] rounded-full text-white"
             >
               <i class="fa-solid fa-envelope"></i>
             </div>
@@ -189,16 +245,19 @@
             use.
           </p>
           <div
-            class="lg:flex lg:gap-3 lg:justify-center font-semibold lg:items-center text-red"
+            class="flex gap-3 justify-center font-semibold items-center text-red"
           >
             <a href="#">Learn More</a>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
-        <div class="lg:px-8 lg:pb-4 lg:rounded-xl lg:text-center bg-white">
-          <div class="lg:flex lg:justify-center">
+
+        <div
+          class="px-8 pb-4 pt-2 rounded-xl text-center bg-white top-12 mx-5 my-6 md:mx-0 md:my-0 lg:my-0 lg:mx-0"
+        >
+          <div class="flex justify-center">
             <div
-              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+              class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
             >
               <i class="fa-solid fa-headphones"></i>
             </div>
@@ -218,17 +277,17 @@
         </div>
       </div>
     </section>
+
     <section
-      class="lg:px-24 lg:py-12 lg:flex w-full gap-12 lg:items-center bg-[#F8F5F6]"
+      class="py-10 lg:px-24 lg:py-12 lg:flex w-full gap-12 lg:items-center bg-[#F8F5F6]"
     >
-      <div class="lg:w-[40%]">
-        <p class="text-[#FF1D1D] font-semibold lg:my-2">How we work</p>
-        <h1 class="lg:text-3xl lg:font-semibold lg:my-2">
-          Our expert team <br />
-          do their best <br />
+      <div class="text-center md:text-left lg:text-left lg:w-[40%]">
+        <p class="text-[#FF1D1D] font-bold lg:my-2">How we work</p>
+        <h1 class="md:w-60 lg:w-60 lg:text-3xl font-bold lg:my-2">
+          Our expert team do their best
         </h1>
-        <p>
-          You can also record any previous experience at other <br />jobs or
+        <p class="px-4 md:px-0 lg:px-0">
+          You can also record any previous experience at other jobs or
           volunteering and
         </p>
         <button
@@ -237,10 +296,13 @@
           Get Started
         </button>
       </div>
-      <div class="w-[60%] flex gap-12 items-center">
-        <div>
+      <div
+        class="w-[100%] block gap-12 items-center md:w-[60%] md:flex lg:flex"
+        lg:w-[60%]
+      >
+        <div class="pl-[15%] pt-4 md:pl-0 md:pt-0 lg:pl-0 lg:pt-0">
           <div
-            class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-red lg:rounded-full font-bold text-white mb-4"
+            class="w-10 h-10 flex justify-center items-center bg-red rounded-full font-bold text-white mb-4"
           >
             <p>1</p>
           </div>
@@ -251,72 +313,78 @@
             sign up or send us a <br />quick WhatsApp <br />message.
           </p>
         </div>
-        <div class="flex gap-4 items-center">
-          <i class="fa-solid fa-arrow-right text-red"></i>
-          <div>
-            <div
-              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-white lg:rounded-full font-bold mb-4 text-red"
-            >
-              <p>2</p>
+
+        <div class="pl-20 pt-5 md:pl-0 md:pt-0 lg:pl-0 lg:pt-0">
+          <div class="flex gap-4 items-center">
+            <i class="fa-solid fa-arrow-right text-red"></i>
+            <div>
+              <div
+                class="w-10 h-10 flex justify-center items-center bg-white rounded-full font-bold mb-4 text-red"
+              >
+                <p>2</p>
+              </div>
+              <p class="font-semibold">Processing</p>
+              <p>
+                After you initiate the <br />trade, you can sit back <br />and
+                relax while we <br />process your gift cards <br />as quickly as
+                possible,
+              </p>
             </div>
-            <p class="font-semibold">Processing</p>
-            <p>
-              After you initiate the <br />trade, you can sit back <br />and
-              relax while we <br />process your gift cards <br />as quickly as
-              possible,
-            </p>
           </div>
         </div>
-        <div class="flex gap-4 items-center">
-          <i class="fa-solid fa-arrow-right text-red"></i>
-          <div>
-            <div
-              class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-white lg:rounded-full font-bold mb-4 text-red"
-            >
-              <p>3</p>
+        <div class="pl-[35%] pt-5 md:pl-0 md:pt-0 lg:pl-0 lg:pt-0">
+          <div class="flex gap-4 items-center">
+            <i class="fa-solid fa-arrow-right text-red"></i>
+            <div>
+              <div
+                class="w-10 h-10 flex justify-center items-center bg-white rounded-full font-bold mb-4 text-red"
+              >
+                <p>3</p>
+              </div>
+              <p class="font-semibold">Payment</p>
+              <p>
+                After you initiate the <br />trade, you can sit back <br />and
+                relax while we <br />process your gift cards <br />as quickly as
+                possible,
+              </p>
             </div>
-            <p class="font-semibold">Payment</p>
-            <p>
-              After you initiate the <br />trade, you can sit back <br />and
-              relax while we <br />process your gift cards <br />as quickly as
-              possible,
-            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="lg:py-12 lg:px-24 bg-[#F1F9FA] relative">
-      <div class="lg:flex lg:justify-between lg:items-center mb-12">
+
+    <section class="py-12 lg:py-12 lg:px-24 bg-[#F1F9FA] relative">
+      <div class="flex justify-between items-center mb-12 p-4">
         <div>
           <p class="text-[#FF1D1D] font-semibold lg:my-2">Testimonial</p>
           <h1 class="lg:font-bold lg:text-4xl lg:mt-2 capitalize">
             Don't just take our word for it
           </h1>
         </div>
-        <div class="lg:flex lg:gap-4 lg:items-center">
+        <div class="flex gap-4 items-center">
           <div
             id="prevBtn"
-            class="lg:w-8 lg:h-8 lg:flex lg:justify-center lg:items-center bg-white lg:rounded-full font-bold mb-4"
+            class="w-8 h-8 flex justify-center items-center bg-white rounded-full font-bold mb-4"
           >
             <i class="fa-solid fa-arrow-left text-red"></i>
           </div>
           <div
             id="nextBtn"
-            class="lg:w-8 lg:h-8 lg:flex lg:justify-center lg:items-center bg-red lg:rounded-full font-bold mb-4"
+            class="w-8 h-8 flex justify-center items-center bg-red rounded-full font-bold mb-4"
           >
             <i class="fa-solid fa-arrow-right text-white"></i>
           </div>
         </div>
       </div>
-      <div class="whitespace-nowrap overflow-hidden w-[2000px]">
+      <div
+        class="whitespace-nowrap w-[500px] overflow-scroll md:overflow-hidden lg:overflow-hidden md:w-[1500px] lg:w-[1500]"
+      >
         <div class="inline-block carousel">
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
-            <div class="lg:flex lg:justify-between lg:items-center">
-              <div class="lg:flex lg:gap-4 lg:items-center">
+          <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-4 items-center">
                 <div
-                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+                  class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
@@ -328,20 +396,18 @@
               </div>
               <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
             </div>
-            <p class="lg:my-6">
+            <p class="my-6">
               consetetur sadipscing elltr, sed dlam nonumy <br />
               elrmod tempor invidunt ut labore et <br />
               dolore magna allquyam erat, sed dlam <br />
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
-            <div class="lg:flex lg:justify-between lg:items-center">
-              <div class="lg:flex lg:gap-4 lg:items-center">
+          <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-4 items-center">
                 <div
-                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+                  class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
@@ -349,24 +415,22 @@
                     class="object-cover"
                   />
                 </div>
-                <p class="font-bold my-3">Charles Petterson</p>
+                <p class="font-bold my-3">John Doe</p>
               </div>
               <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
             </div>
-            <p class="lg:my-6">
+            <p class="my-6">
               consetetur sadipscing elltr, sed dlam nonumy <br />
               elrmod tempor invidunt ut labore et <br />
               dolore magna allquyam erat, sed dlam <br />
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
-            <div class="lg:flex lg:justify-between lg:items-center">
-              <div class="lg:flex lg:gap-4 lg:items-center">
+          <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-4 items-center">
                 <div
-                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+                  class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
@@ -374,24 +438,23 @@
                     class="object-cover"
                   />
                 </div>
-                <p class="font-bold my-3">Charles Petterson</p>
+                <p class="font-bold my-3">John Doe</p>
               </div>
               <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
             </div>
-            <p class="lg:my-6">
+            <p class="my-6">
               consetetur sadipscing elltr, sed dlam nonumy <br />
               elrmod tempor invidunt ut labore et <br />
               dolore magna allquyam erat, sed dlam <br />
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
-            <div class="lg:flex lg:justify-between lg:items-center">
-              <div class="lg:flex lg:gap-4 lg:items-center">
+
+          <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-4 items-center">
                 <div
-                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+                  class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
@@ -399,61 +462,11 @@
                     class="object-cover"
                   />
                 </div>
-                <p class="font-bold my-3">Charles Petterson</p>
+                <p class="font-bold my-3">John Doe</p>
               </div>
               <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
             </div>
-            <p class="lg:my-6">
-              consetetur sadipscing elltr, sed dlam nonumy <br />
-              elrmod tempor invidunt ut labore et <br />
-              dolore magna allquyam erat, sed dlam <br />
-              voluptua ares nyan.
-            </p>
-          </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
-            <div class="lg:flex lg:justify-between lg:items-center">
-              <div class="lg:flex lg:gap-4 lg:items-center">
-                <div
-                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
-                >
-                  <img
-                    src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
-                    alt="Testimonial"
-                    class="object-cover"
-                  />
-                </div>
-                <p class="font-bold my-3">Charles Petterson</p>
-              </div>
-              <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
-            </div>
-            <p class="lg:my-6">
-              consetetur sadipscing elltr, sed dlam nonumy <br />
-              elrmod tempor invidunt ut labore et <br />
-              dolore magna allquyam erat, sed dlam <br />
-              voluptua ares nyan.
-            </p>
-          </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
-            <div class="lg:flex lg:justify-between lg:items-center">
-              <div class="lg:flex lg:gap-4 lg:items-center">
-                <div
-                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
-                >
-                  <img
-                    src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
-                    alt="Testimonial"
-                    class="object-cover"
-                  />
-                </div>
-                <p class="font-bold my-3">Charles Petterson</p>
-              </div>
-              <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
-            </div>
-            <p class="lg:my-6">
+            <p class="my-6">
               consetetur sadipscing elltr, sed dlam nonumy <br />
               elrmod tempor invidunt ut labore et <br />
               dolore magna allquyam erat, sed dlam <br />
@@ -464,37 +477,52 @@
       </div>
     </section>
     <footer class="lg:flex lg:gap-20 bg-gray-100 lg:px-20 lg:py-12">
-      <div>
-        <h1 class="font-semibold text-lg">Hexiter</h1>
-        <p class="my-4">
+      <div class="pt-10 md:pt-0 lg:pt-0">
+        <h1 class="text-center md:text-left lg:text-left font-semibold text-lg">
+          Hexiter
+        </h1>
+        <p class="text-center md:text-left lg:text-left my-4">
           We're the Best Gift card agency in <br />the country with good
           customer <br />
           assistance and good rate.
         </p>
-        <div class="lg:flex lg:items-center lg:gap-8">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
+        <div
+          class="flex m-0 justify-center md:block md:justify-normal lg:m-0 lg:flex lg:items-center lg:gap-8"
+        >
+          <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
         </div>
       </div>
+
       <div>
-        <h1 class="font-semibold mb-6">Contact Info</h1>
-        <div class="lg:flex lg:gap-3 lg:mb-4">
+        <h1 class="text-center font-bold mt-5 md:text-left lg:text-left">
+          Contact Info
+        </h1>
+        <div
+          class="text-center md:text-left lg:text-left lg:flex lg:gap-3 lg:mb-4"
+        >
           <i class="fa-solid fa-location-dot text-red mt-2"></i>
           <div>
             <p>Address:</p>
             <p>123 main Street, apt 48 San Diago, CA, 99311</p>
           </div>
         </div>
-        <div class="lg:flex lg:gap-3 lg:mb-4">
+        <div
+          class="text-center md:text-left lg:text-left lg:flex lg:gap-3 lg:mb-4"
+        >
           <i class="fa-solid fa-phone text-red mt-2"></i>
           <div>
             <p>Phone:</p>
             <p>+2347065847323</p>
           </div>
         </div>
-        <div class="lg:flex lg:gap-3 lg:mb-4">
+        <div
+          class="text-center md:text-left lg:text-left lg:flex lg:gap-3 lg:mb-4"
+        >
           <i class="fa-solid fa-envelope text-red mt-2"></i>
           <div>
             <p>Email:</p>
@@ -502,9 +530,10 @@
           </div>
         </div>
       </div>
+
       <div>
-        <h1 class="font-semibold mb-6">Quick Links</h1>
-        <ul>
+        <h1 class="text-center font-bold mt-5 md:text-left">Quick Links</h1>
+        <ul class="text-center md:text-left lg:text-left">
           <li class="lg:mb-4">Service</li>
           <li class="lg:mb-4">Rate</li>
           <li class="lg:mb-4">Blog</li>
@@ -513,9 +542,15 @@
         </ul>
       </div>
       <div>
-        <h1 class="font-semibold mb-6">Newsletter</h1>
-        <p>Get the latest trends updates right at your inbox</p>
-        <div class="flex flex-col">
+        <h1
+          class="font-bold mt-5 text-center pt-3 md:pt-0 md:text-left lg:text-left lg:pt-0"
+        >
+          Newsletter
+        </h1>
+        <p class="text-center md:text-left lg:text-left">
+          Get the latest trends updates right at your inbox
+        </p>
+        <div class="flex flex-col px-4 md:px-0 lg:px-0">
           <label for="">Email</label>
           <input
             type="email"
@@ -525,9 +560,11 @@
             class="border h-8 rounded-md focus:outline-blue-500 mt-2 p-4"
           />
         </div>
-        <div class="flex justify-end">
+        <div
+          class="flex justify-center pb-5 md:justify-end md:pb-0 lg:justify-end lg:pb-0"
+        >
           <button
-            class="py-2 px-8 mt-6 flex-end border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+            class="py-2 px-8 mt-4 flex-start border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
           >
             Subcribe
           </button>
@@ -564,6 +601,21 @@
       nextBtn.addEventListener("click", nextSlide);
 
       // showSlide(currentIndex);
+
+      //Toggle
+      const toggle = document.getElementById("toggle");
+      const toggleOpen = document.getElementById("Open");
+      const toggleClose = document.getElementById("Close");
+
+      toggleOpen.addEventListener("click", () => {
+        toggle.style.display = "block";
+        toggle.style.transition = "translateX(100%)";
+      });
+
+      toggleClose.addEventListener("click", () => {
+        toggle.style.display = "none";
+        toggle.style.transition = "translateX(0)";
+      });
     </script>
   </body>
 </html>
