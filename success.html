@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightblue: "#7F82A1",
+              red: "#FF1D1D",
+            },
+            backgroundColor: {
+              red: "#FF1D1D",
+              gradient:
+                "linear-gradient(0deg, rgba(255, 113, 113, 0.1), rgba(255, 113, 113, 0.1)), radial-gradient(102.1% 102.1% at 17.33% 0%, #FFFFFF 0%, rgba(228, 228, 228, 0.750969) 63.85%, rgba(186, 55, 55, 0.61) 100%)",
+            },
+            fontFamily: {
+              serif: "Nunito, sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-serif">
+    <div class="flex justify-center items-center">
+      <div class="text-center">
+        <div class="w-40 h-40 mt-20 flex items-center justify-center m-auto d">
+          <img src="./assets/email.svg" alt="email" class="object-cover" />
+        </div>
+
+        <div class="my-12">
+          <h1 class="text-xl font-bold mb-2">Your Email is on its way</h1>
+          <p class="text-lightblue text-sm">
+            We've sent a reset link to your email
+          </p>
+        </div>
+        <button
+          class="py-1 px-8 my-4 w-full border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

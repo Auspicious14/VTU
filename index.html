@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Landing Page</title>
     <script
       src="https://kit.fontawesome.com/83580d7bef.js"
       crossorigin="anonymous"
@@ -14,6 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .scroll-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .scroll-content {
+        display: inline-block;
+        animation: scroll 10s linear infinite;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -36,7 +55,7 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-serif">
     <nav
       class="flex items-center justify-between relative px-2 md:flex md:static lg:flex lg:static lg:justify-between lg:shadow-sm lg:px-24 lg:py-4 lg:items-center"
     >
@@ -88,6 +107,8 @@
 
     <section class="text-center py-10 lg:text-center lg:py-20 bg-transparent">
       <h1 class="font-bold text-[2rem] lg:font-bold lg:text-6xl">
+    <section class="lg:text-center lg:pt-20 bg-transparent relative">
+      <h1 class="lg:font-bold lg:text-6xl">
         Best Giftcard <br />
         Company in Nigeria
       </h1>
@@ -104,6 +125,59 @@
       <div class="lg:mt-12 lg:flex lg:justify-center lg:items-center">
         <div class="">
           <img src="./assets/gift card 1.svg" alt="giftcards" />
+        </div>
+      </div>
+      <div
+        class="w-full mx-auto bg-gray-100 p-4 rounded-lg absolute bottom-0 shadow-md"
+      >
+        <div class="scroll-container">
+          <div class="scroll-content flex flex-wrap items-center gap-12">
+            <div>
+              <img src="./assets/steam.svg" alt="stem" class="object-cover" />
+            </div>
+            <div>
+              <img src="./assets/walmart.svg" alt="stem" class="object-cover" />
+            </div>
+            <div>
+              <img src="./assets/Vector.svg" alt="stem" class="object-cover" />
+            </div>
+
+            <div>
+              <img
+                src="./assets/eBay svg.svg"
+                alt="stem"
+                class="object-cover"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/Apple svg.svg"
+                alt="stem"
+                class="object-cover"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/xbox-logo-transparent-free-png.svg"
+                alt="stem"
+                class="object-cover"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/Group (1).svg"
+                alt="stem"
+                class="object-cover"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/Google-Play-Logo-2015-2016 1.svg"
+                alt="stem"
+                class="object-cover"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -355,6 +429,10 @@
 
     <section class="py-12 lg:py-12 lg:px-24 bg-[#F1F9FA] relative">
       <div class="flex justify-between items-center mb-12 p-4">
+    <section class="bg-[#F1F9FA] relative">
+      <div
+        class="lg:pt-12 lg:px-24 lg:flex lg:justify-between lg:items-center mb-12"
+      >
         <div>
           <p class="text-[#FF1D1D] font-semibold lg:my-2">Testimonial</p>
           <h1 class="lg:font-bold lg:text-4xl lg:mt-2 capitalize">
@@ -383,13 +461,18 @@
           <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
             <div class="flex justify-between items-center">
               <div class="flex gap-4 items-center">
+      <div class="w-full">
+        <div class="flex gap-12 pb-12 w-full overflow-hidden carousel">
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+            <div class="lg:flex lg:justify-between lg:items-center">
+              <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
                   class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">John Doe</p>
@@ -406,13 +489,16 @@
           <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
             <div class="flex justify-between items-center">
               <div class="flex gap-4 items-center">
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+            <div class="lg:flex lg:justify-between lg:items-center">
+              <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
                   class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">John Doe</p>
@@ -429,13 +515,16 @@
           <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
             <div class="flex justify-between items-center">
               <div class="flex gap-4 items-center">
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+            <div class="lg:flex lg:justify-between lg:items-center">
+              <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
                   class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">John Doe</p>
@@ -453,13 +542,16 @@
           <div class="px-8 py-4 rounded-xl bg-white inline-block w-auto">
             <div class="flex justify-between items-center">
               <div class="flex gap-4 items-center">
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+            <div class="lg:flex lg:justify-between lg:items-center">
+              <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
                   class="w-10 h-10 flex justify-center items-center bg-[#FF5200] rounded-full text-white"
                 >
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">John Doe</p>
@@ -467,6 +559,53 @@
               <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
             </div>
             <p class="my-6">
+            <p class="lg:my-6">
+              consetetur sadipscing elltr, sed dlam nonumy <br />
+              elrmod tempor invidunt ut labore et <br />
+              dolore magna allquyam erat, sed dlam <br />
+              voluptua ares nyan.
+            </p>
+          </div>
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+            <div class="lg:flex lg:justify-between lg:items-center">
+              <div class="lg:flex lg:gap-4 lg:items-center">
+                <div
+                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+                >
+                  <img
+                    src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                    alt="Testimonial"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <p class="font-bold my-3">Charles Petterson</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+            </div>
+            <p class="lg:my-6">
+              consetetur sadipscing elltr, sed dlam nonumy <br />
+              elrmod tempor invidunt ut labore et <br />
+              dolore magna allquyam erat, sed dlam <br />
+              voluptua ares nyan.
+            </p>
+          </div>
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
+            <div class="lg:flex lg:justify-between lg:items-center">
+              <div class="lg:flex lg:gap-4 lg:items-center">
+                <div
+                  class="lg:w-10 lg:h-10 lg:flex lg:justify-center lg:items-center bg-[#FF5200] lg:rounded-full lg:text-white"
+                >
+                  <img
+                    src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
+                    alt="Testimonial"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <p class="font-bold my-3">Charles Petterson</p>
+              </div>
+              <i class="fa-solid fa-quote-left text-[#099A97] text-2xl"></i>
+            </div>
+            <p class="lg:my-6">
               consetetur sadipscing elltr, sed dlam nonumy <br />
               elrmod tempor invidunt ut labore et <br />
               dolore magna allquyam erat, sed dlam <br />
@@ -570,6 +709,63 @@
           </button>
         </div>
       </div>
+      <div class="flex gap-12">
+        <div>
+          <h1 class="font-semibold mb-6">Contact Info</h1>
+          <div class="lg:flex lg:gap-3 lg:mb-4">
+            <i class="fa-solid fa-location-dot text-red mt-2"></i>
+            <div>
+              <p>Address:</p>
+              <p>123 main Street, apt 48 San Diago, CA, 99311</p>
+            </div>
+          </div>
+          <div class="lg:flex lg:gap-3 lg:mb-4">
+            <i class="fa-solid fa-phone text-red mt-2"></i>
+            <div>
+              <p>Phone:</p>
+              <p>+2347065847323</p>
+            </div>
+          </div>
+          <div class="lg:flex lg:gap-3 lg:mb-4">
+            <i class="fa-solid fa-envelope text-red mt-2"></i>
+            <div>
+              <p>Email:</p>
+              <p>Admin@Hexiter.com</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="font-semibold mb-6">Quick Links</h1>
+          <ul>
+            <li class="lg:mb-4">Service</li>
+            <li class="lg:mb-4">Rate</li>
+            <li class="lg:mb-4">Blog</li>
+            <li class="lg:mb-4">Privacy Policy</li>
+            <li class="lg:mb-4 text-sm">Terms & Conditions</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-semibold mb-6">Newsletter</h1>
+          <p>Get the latest trends updates right at your inbox</p>
+          <div class="flex flex-col">
+            <label for="">Email</label>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="input your EmaIL Address"
+              class="border h-8 rounded-md focus:outline-blue-500 mt-2 p-4"
+            />
+          </div>
+          <div class="flex justify-end">
+            <button
+              class="py-2 px-8 mt-6 flex-end border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+            >
+              Subcribe
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script>
@@ -577,24 +773,22 @@
       const prevBtn = document.getElementById("prevBtn");
       const nextBtn = document.getElementById("nextBtn");
       const carousel = document.querySelector(".carousel");
-
-      // function showSlide(index) {
-      //   carouselItems.forEach((item) => item.classList.remove("active"));
-      //   carouselItems[index].classList.add("active");
-      // }
-
-      // function prevSlide() {
-      //   currentIndex =
-      //     (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-      //   showSlide(currentIndex);
-      // }
+      const scrollWidth = carousel.scrollWidth;
+      let scrollLeft = carousel.scrollLeft;
       function prevSlide() {
-        carousel.scrollLeft -= 1000;
+        scrollLeft -= 1500;
+        if (scrollLeft <= 0) {
+          scrollLeft = 0;
+        }
+        carousel.scrollLeft = scrollLeft;
       }
       function nextSlide() {
-        // currentIndex = (currentIndex + 1) % carouselItems.length;
-        // showSlide(currentIndex);
-        carousel.scrollLeft += 1000;
+        scrollLeft += 1500;
+        console.log(scrollLeft, scrollWidth);
+        if (scrollLeft >= scrollWidth) {
+          scrollLeft = scrollWidth;
+        }
+        carousel.scrollLeft = scrollLeft;
       }
 
       prevBtn.addEventListener("click", prevSlide);
