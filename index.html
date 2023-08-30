@@ -34,8 +34,6 @@
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/headerComponent.js"></script>
-    <script src="/footerComponent.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -58,7 +56,31 @@
     </script>
   </head>
   <body class="font-serif">
-    <header-component></header-component>
+    <nav
+      class="w-full lg:flex lg:justify-between lg:shadow-sm lg:px-24 lg:py-4 lg:items-center"
+    >
+      <div>
+        <h1 class="font-semibold text-lg">Hexiter</h1>
+      </div>
+      <ul class="flex gap-4 items-center font-semibold">
+        <li><a href="#" class="lg:focus-bg-[#FF1D1D]">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Rates</a></li>
+      </ul>
+      <div>
+        <button
+          class="py-2 px-8 border border-gray-400 rounded-lg bg-transparent font-semibold text-center"
+        >
+          Login
+        </button>
+        <button
+          class="py-2 px-8 border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+        >
+          Sign up
+        </button>
+      </div>
+    </nav>
     <section class="lg:text-center lg:pt-20 bg-transparent relative">
       <h1 class="lg:font-bold lg:text-6xl">
         Best Giftcard <br />
@@ -335,8 +357,10 @@
         </div>
       </div>
     </section>
-    <section class="lg:py-12 lg:px-24 bg-[#F1F9FA] relative">
-      <div class="lg:flex lg:justify-between lg:items-center mb-12">
+    <section class="bg-[#F1F9FA] relative">
+      <div
+        class="lg:pt-12 lg:px-24 lg:flex lg:justify-between lg:items-center mb-12"
+      >
         <div>
           <p class="text-[#FF1D1D] font-semibold lg:my-2">Testimonial</p>
           <h1 class="lg:font-bold lg:text-4xl lg:mt-2 capitalize">
@@ -358,13 +382,11 @@
           </div>
         </div>
       </div>
-      <div
-        class="whitespace-nowrap overflow-hidden w-full relative right-0 -left-24"
-      >
-        <div class="inline-block carousel">
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
+      <div class="w-full">
+        <div
+          class="grid gap-12 pb-12 w-full grid-cols-6 overflow-hidden carousel"
+        >
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
             <div class="lg:flex lg:justify-between lg:items-center">
               <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
@@ -373,7 +395,7 @@
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">John Doe</p>
@@ -387,9 +409,7 @@
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto ml-8"
-          >
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
             <div class="lg:flex lg:justify-between lg:items-center">
               <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
@@ -398,7 +418,7 @@
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">Charles Petterson</p>
@@ -412,9 +432,7 @@
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto ml-8"
-          >
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
             <div class="lg:flex lg:justify-between lg:items-center">
               <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
@@ -423,7 +441,7 @@
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">Charles Petterson</p>
@@ -437,9 +455,7 @@
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto ml-8"
-          >
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
             <div class="lg:flex lg:justify-between lg:items-center">
               <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
@@ -448,7 +464,7 @@
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">Charles Petterson</p>
@@ -462,9 +478,7 @@
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
             <div class="lg:flex lg:justify-between lg:items-center">
               <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
@@ -473,7 +487,7 @@
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">Charles Petterson</p>
@@ -487,9 +501,7 @@
               voluptua ares nyan.
             </p>
           </div>
-          <div
-            class="lg:px-8 lg:py-4 lg:rounded-xl bg-white inline-block w-auto"
-          >
+          <div class="lg:px-8 lg:py-4 lg:rounded-xl bg-white">
             <div class="lg:flex lg:justify-between lg:items-center">
               <div class="lg:flex lg:gap-4 lg:items-center">
                 <div
@@ -498,7 +510,7 @@
                   <img
                     src="./assets/harry-cunningham-EPi3TRQc5Z0-unsplash 1.svg"
                     alt="Testimonial"
-                    class="object-cover"
+                    class="object-cover w-full h-full"
                   />
                 </div>
                 <p class="font-bold my-3">Charles Petterson</p>
@@ -515,30 +527,101 @@
         </div>
       </div>
     </section>
-    <footer-component></footer-component>
+    <footer class="lg:flex lg:gap-20 bg-gray-100 lg:px-20 lg:py-12">
+      <div>
+        <h1 class="font-semibold text-lg">Hexiter</h1>
+        <p class="my-4">
+          We're the Best Gift card agency in <br />the country with good
+          customer <br />
+          assistance and good rate.
+        </p>
+        <div class="lg:flex lg:items-center lg:gap-8">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="flex gap-12">
+        <div>
+          <h1 class="font-semibold mb-6">Contact Info</h1>
+          <div class="lg:flex lg:gap-3 lg:mb-4">
+            <i class="fa-solid fa-location-dot text-red mt-2"></i>
+            <div>
+              <p>Address:</p>
+              <p>123 main Street, apt 48 San Diago, CA, 99311</p>
+            </div>
+          </div>
+          <div class="lg:flex lg:gap-3 lg:mb-4">
+            <i class="fa-solid fa-phone text-red mt-2"></i>
+            <div>
+              <p>Phone:</p>
+              <p>+2347065847323</p>
+            </div>
+          </div>
+          <div class="lg:flex lg:gap-3 lg:mb-4">
+            <i class="fa-solid fa-envelope text-red mt-2"></i>
+            <div>
+              <p>Email:</p>
+              <p>Admin@Hexiter.com</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="font-semibold mb-6">Quick Links</h1>
+          <ul>
+            <li class="lg:mb-4">Service</li>
+            <li class="lg:mb-4">Rate</li>
+            <li class="lg:mb-4">Blog</li>
+            <li class="lg:mb-4">Privacy Policy</li>
+            <li class="lg:mb-4 text-sm">Terms & Conditions</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-semibold mb-6">Newsletter</h1>
+          <p>Get the latest trends updates right at your inbox</p>
+          <div class="flex flex-col">
+            <label for="">Email</label>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="input your EmaIL Address"
+              class="border h-8 rounded-md focus:outline-blue-500 mt-2 p-4"
+            />
+          </div>
+          <div class="flex justify-end">
+            <button
+              class="py-2 px-8 mt-6 flex-end border-gray-400 rounded-lg bg-red font-semibold text-center text-white"
+            >
+              Subcribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       const carouselItems = document.querySelectorAll(".carousel-item");
       const prevBtn = document.getElementById("prevBtn");
       const nextBtn = document.getElementById("nextBtn");
       const carousel = document.querySelector(".carousel");
-
+      const scrollWidth = carousel.scrollWidth;
+      let scrollLeft = carousel.scrollLeft;
       function prevSlide() {
-        console.log(carousel.scrollLeft);
-        carousel.scrollTo({
-          top: 224,
-          left: 0,
-          behavior: "smooth",
-        });
+        scrollLeft -= 1500;
+        if (scrollLeft <= 0) {
+          scrollLeft = 0;
+        }
+        carousel.scrollLeft = scrollLeft;
       }
       function nextSlide() {
-        console.log(carousel.scrollLeft);
-        carousel.scrollTo({
-          top: 0,
-          right: 200,
-          behavior: "smooth",
-        });
-        // carousel.scrollIntoView(true);
+        scrollLeft += 1500;
+        console.log(scrollLeft, scrollWidth);
+        if (scrollLeft >= scrollWidth) {
+          scrollLeft = scrollWidth;
+        }
+        carousel.scrollLeft = scrollLeft;
       }
 
       prevBtn.addEventListener("click", prevSlide);
